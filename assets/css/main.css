@@ -1794,3 +1794,7 @@ body.is-preload #footer {
 .project-desc {
   margin-bottom: 1rem;
 }
+
+.about-me-pic {
+  object-fit: cover;
+}
