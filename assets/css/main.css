@@ -1274,11 +1274,51 @@ button {
   -ms-transition: -ms-transform 0.325s ease-in-out,
     -ms-filter 0.325s ease-in-out;
   transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-  background-image: url("../../images/bg.jpg");
+  /* background-image: url("../../images/bg.jpg");
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   z-index: 1;
+  background: linear-gradient(60deg, #36316e, #634562, #167b90);
+  background-size: 600% 600%;
+
+  -webkit-animation: background-animation 10s ease infinite;
+  -moz-animation: background-animation 10s ease infinite;
+  animation: background-animation 10s ease infinite;
+}
+
+@-webkit-keyframes background-animation {
+  0% {
+    background-position: 18% 0%;
+  }
+  50% {
+    background-position: 83% 100%;
+  }
+  100% {
+    background-position: 18% 0%;
+  }
+}
+@-moz-keyframes background-animation {
+  0% {
+    background-position: 18% 0%;
+  }
+  50% {
+    background-position: 83% 100%;
+  }
+  100% {
+    background-position: 18% 0%;
+  }
+}
+@keyframes background-animation {
+  0% {
+    background-position: 18% 0%;
+  }
+  50% {
+    background-position: 83% 100%;
+  }
+  100% {
+    background-position: 18% 0%;
+  }
 }
 
 body.is-article-visible #bg:after {
